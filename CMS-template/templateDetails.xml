@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN"
+        "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site" method="upgrage">
+    <name>RDO</name>
+    <creationDate>2015-07-02</creationDate>
+    <author>BlackSeaSoft</author>
+    <authorEmail>blackseasoft@gmail.com</authorEmail>
+    <authorUrl>http://www.blackseasoft.net</authorUrl>
+    <copyright>© 2015 BlackSeaSoft. All Rights Reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0.0</version>
+    <description>TPL_RDO_XML_DESCRIPTION</description>
+
+    <files>
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>img</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+		<folder>font</folder>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>favicon.ico</filename>
+        <filename>index.php</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>templateDetails.xml</filename>
+    </files>
+	
+    <positions>
+        <position>top-search</position>
+        <position>top-icon-social</position>
+		<position>svg-projects</position>
+		<position>svg-subcribes</position>
+		<position>svg-header</position>
+		<position>form-window</position>
+        <position>icon-lang</position>
+		<position>partner</position>
+        <position>menu</position>
+        <position>bottom-menu</position>
+		<position>bottom-search</position>
+    </positions>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_rdo.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_rdo.sys.ini</language>
+        <language tag="de-DE">de-DE/de-DE.tpl_rdo.ini</language>
+        <language tag="de-DE">de-DE/de-DE.tpl_rdo.sys.ini</language>
+		<language tag="uk-UA">uk-UA/uk-UA.tpl_rdo.ini</language>
+        <language tag="uk-UA">uk-UA/uk-UA.tpl_rdo.sys.ini</language>
+    </languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="advanced"> 					
+				<field name="phone"  type="textarea" default="+3 8 (077) 777 77 88"
+						label="PHONE"
+						filter="string" 
+						rows="10" 
+						cols="5"
+						description="Каждый новый номер должен начинаться с новой строчки"
+						/>
+						
+				<field name="email"  type="textarea" default="MAIL@OFFICE.COM.UA"
+						label="EMAIL"
+						filter="string" 
+						rows="10" 
+						cols="5"
+						description="Каждый новый адрес должен начинаться с новой строчки"
+						/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
