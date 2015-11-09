@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>RDO</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/snap.svg-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+</head>
+
+<body>
+<div class="popup__overlay">
+    <div class="popup">
+        <a href="#" class="popup__close">X</a>
+        <div class="form-form">
+        <p>ПРИСОЕДИНИТСЯ К НАМ</p>
+            <div class="popup-form__row">
+                <label for="popup-firstName">ім'я:</label>
+                <input name="firstName" required type="text" id="popup-firstName"/>
+            </div>
+            <div class="popup-form__row">
+                <label for="popup-lastName">прізвище:</label>
+                <input name="lastName" required type="text" id="popup-lastName"/>
+            </div>
+            <div class="popup-form__row">
+                <label for="popup-patronymic">по-батькові:</label>
+                <input name="patronymic" required type="text" id="popup-patronymic"/>
+            </div>
+            <div class="popup-form__row">
+                <label for="popup-phone">номер контактного телефону:</label>
+                <input name="phone" required type="text" id="popup-phone"/>
+            </div>
+            <div class="popup-form__row">
+                <label for="popup-email">e-mail:</label>
+                <input name="email" type="email" id="popup-email"/>
+            </div>
+            <div class="popup-form__row">
+                <label for="popup-reasonDescription">чому вирішили приєднатися до нас:</label>
+                <textarea name="reasonDesription" required id="popup-reasonDescription"></textarea>
+            </div>
+            <div class="popup-form__row">
+                <label for="popup-futureDescription">ким ви себе бачите в організації:</label>
+                <textarea name="futureDescription" required id="popup-futureDescription"></textarea>
+            </div>
+            <div class="erros">
+                //ошибки
+            </div>
+            <input type="submit" id="validationClick" value="Отправить" />
+        </div>
+    </div>
+    <!--[if lt IE 9]><div class="popup__valignfix"></div><![endif]-->
+</div>
+
+    <header class="header clearFix">
+        <div class="wrapper-info-line">
+            <div class="info_line">
+                <div class="social_find">
+                    <div class="social">
+                        <a href="#" class="icon_social twitter_i"></a>
+                        <a href="#" class="icon_social facebook_i"></a>
+                        <a href="#" class="icon_social youtube_i"></a>
+                    </div>
+                    <div class="find">
+                        <form action="#" id="h-search">
+                            <input type="text" />
+                            <input type="submit" value="" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="lang clearFix">
+                    <a href="#" class="icon_lang ukr_i"></a>
+                    <a href="#" class="icon_lang eng_l"></a>
+                    <a href="#" class="icon_lang ger_l"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main clearFix parallax-window" data-parallax="scroll" data-image-src="img/bg.jpg">
+            <svg class="circle_anim"></svg>
+            <div class="logo_info clearFix">
+                <div class="logo">
+                    <img src="img/logo-uk.png" alt="logo" />
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation clearFix">
+            <menu>
+                <div class="topmenu">
+                    <ul>
+                        <li><a href="#">Кто мы</a>
+                            <ul>
+                                <li><a href="#">Релизы</a></li>
+                                <li><a href="#">Анонсы</a></li>
+                                <li><a href="#">Заявления</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="#">Наши проекты</a>
+                            <ul>
+                                <li><a href="#">Релизы</a></li>
+                                <li><a href="#">Анонсы</a></li>
+                                <li><a href="#">Заявления</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="#">Новости</a>
+                            <ul>
+                                <li><a href="#">Релизы</a></li>
+                                <li><a href="#">Анонсы</a></li>
+                                <li><a href="#">Заявления</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="#">Отчеты</a>
+                            <ul>
+                                <li><a href="#">Релизы</a></li>
+                                <li><a href="#">Анонсы</a></li>
+                                <li><a href="#">Заявления</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="#">Галерея</a></li>
+                        <li class="drop"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </menu>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="content clearFix">
+            <div class="own-project">
+                <div class="title-project">Наши проекты</div>
+                <svg id="lineProject" class="svg-project" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  viewBox="0 0 115 115" enable-background="new 200 200 200 200" xml:space="preserve">
+                    <svg x="-150px" y="25%" viewBox="0 0 3200 3200">
+                        <g>
+                            <path id="strelkaPrevious" fill="#B1B1B2" d="M234.2,572.7L0,296.2L234.2,19.7c19.7-22.6,56.4-25.4,79-5.6c22.6,19.7,25.4,56.4,5.6,79L146.7,296.2 l172.1,205.9c22.6,22.6,16.9,59.2-5.6,79c-11.3,8.5-22.6,14.1-36.7,14.1C259.6,595.3,245.4,586.8,234.2,572.7z" />
+                        </g>
+                    </svg>
+                    <svg x="255px" y="25%">
+                        <g>
+                            <path id="strelkaNext" fill="#B1B1B2" d="M2,21.1c-0.5,0-0.9-0.2-1.3-0.5c-0.8-0.7-1-2-0.2-2.8l6.1-7.3L0.5,3.3c-0.7-0.8-0.6-2.1,0.2-2.8c0.8-0.7,2.1-0.6,2.8,0.2l8.3,9.8l-8.3,9.8C3.1,20.8,2.6,21.1,2,21.1z" />
+                        </g>
+                    </svg>
+                </svg>
+            </div>
+
+            <div class="wrapper-news partner clearFix">
+                <div class="news clearFix">
+                    <div class="first-news clearFix">
+                        <div class="name-path">ГЛАВНОЕ СОБЫТИЕ</div>
+                        <a href="#">
+                            <div class="image-box">
+                                <span class="filter"></span>
+                                <img src="img/big-news.jpg"/>
+                                <span class="name-news">
+                                    <span class="text-Link">Национальный художественный музей Украины открыл свои тайны детям Вышгородского района</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="last-news clearFix">
+                        <div class="name-path">ПОСЛЕДНИЕ НОВОСТИ</div>
+                        <div class="wrapper-last-news">
+                            <div class="block-last-news">
+                                <span class="date-news-last">Среда 21.09</span>
+                                <a href="#">
+                                    <div class="box-text-image">
+                                        <span class="small-filter"></span>
+                                        <img src="img/small-news.jpg"/>
+                                        <span class="small-name-news">
+                                            <span>Национальный художественный музей Украины открыл свои тайны детям Вышгородского района</span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="block-last-news">
+                                <span class="date-news-last">Среда 21.09</span>
+                                <a href="#">
+                                    <div class="box-text-image">
+                                        <span class="small-filter"></span>
+                                        <img src="img/small-news.jpg"/>
+                                        <span class="small-name-news">
+                                            <span>Национальный художественный музей Украины открыл свои тайны детям Вышгородского района</span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="block-last-news">
+                                <span class="date-news-last">Среда 21.09</span>
+                                <a href="#">
+                                    <div class="box-text-image">
+                                        <span class="small-filter"></span>
+                                        <img src="img/small-news.jpg"/>
+                                        <span class="small-name-news">
+                                            <span>Национальный художественный музей Украины открыл свои тайны детям Вышгородского района</span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="all-news">
+                                <span><a href="#">Узнать больше...</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="md-trigger" data-modal="modal-16">Blur</button>
+
+            <div class="wrapper-partner-lineMenu">
+                <div class="wrapper-partner">
+                    <h1 class="titleparnter">НАШИ ПАРТНЕРЫ</h1>
+                    <div class="content-partner">
+                        <ul class="partner-cell">
+                            <li class="partner-row">
+                                <a href="#"><img src="img/logo-uk.png" alt="logo" /></a>
+                            </li>
+                            <li class="partner-row">
+                                <a href="#"><img src="img/logo-uk.png" alt="logo" /></a>
+                            </li>
+                            <li class="partner-row">
+                                <a href="#"><img src="img/logo-uk.png" alt="logo" /></a>
+                            </li>
+                            <li class="partner-row">
+                                <a href="#"><img src="img/logo-uk.png" alt="logo" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+                <div class="line-menu">
+                    <svg id="menuLineProject" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  viewBox="0 0 155 155" enable-background="new 200 200 200 200" xml:space="preserve">
+                        <g>
+                            <circle id="Mcircle_1" width="50" fill="#E4E4E4" cx="-175" cy="90" r="13" stroke-width="8" stroke="#B1B1B2"/>
+                        </g>
+                        <g>
+                            <circle id="Mcircle_2" width="50" fill="#E4E4E4" cx="60" cy="90" r="13" stroke-width="8" stroke="#B1B1B2"/>
+                        </g>
+                        <g>
+                            <circle id="Mcircle_3" width="50" fill="#E4E4E4" cx="285" cy="90" r="13" stroke-width="8" stroke="#B1B1B2"/>
+                        </g>
+                        <g>
+                           <svg fill-opacity="0" fill="#B1B1B2" id="tw_fill" width="72" class="social_button_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="37px" y="25px" viewBox="0 0 24 24" enable-background="new 0 0 15.1 1" xml:space="preserve">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.3,1.7c3.2,0,5.8,2.6,5.8,5.8c0,3.2-2.6,5.8-5.8,5.8c-3.2,0-5.8-2.6-5.8-5.8C2.5,4.3,5.1,1.7,8.3,1.7L8.3,1.7z M11.6,7.5C11.6,7.5,11.6,7.5,11.6,7.5l0.1-0.2c0.3,0,0.4,0,0.6-0.1l0.4-0.3c-0.1,0-0.3,0-0.5,0l-0.5-0.1c0,0,0.1,0,0.1,0c0.1,0,0.1,0,0.2,0c0.1,0,0.2,0,0.3-0.1l0.4-0.3c-0.2,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.5,0-0.5-0.1c0-0.1,0-0.2-0.1-0.4c-0.1-0.1-0.1-0.3-0.2-0.4c-0.2-0.2-0.4-0.4-0.6-0.6l-1-0.3c0.1-0.1,0.3-0.1,0.4-0.1c0.4-0.1,0.4-0.3,0.3-0.3c-0.1,0-0.5,0.1-0.6,0.1L10,4.1c-0.3,0-0.4,0.2-0.6,0.3l0.1-0.2C9.2,4.3,8.8,4.9,8.6,5.1L8.1,6.3c0,0-0.4-0.3-0.6-0.5C7.3,5.7,7,5.5,6.8,5.4C6.2,5.2,5.7,5,5.1,4.8c0,0.5,0.3,0.8,0.7,1.1L5.4,5.9c0,0.2,0.2,0.5,0.3,0.6C5.9,6.7,6,6.7,6.3,6.8l0,0C6,6.9,6.1,6.8,5.8,7c0,0.1,0.3,0.4,0.5,0.5l0.5,0.1c0,0-0.1,0.1-0.1,0.1c-0.1,0-0.1,0.1-0.1,0.1C6.5,7.9,6.5,8,6.5,8.1l0.6,0.3c0,0.1-0.2,0.2-0.3,0.3C6.4,8.9,6,9,5.5,9.1c-0.4,0-0.7-0.1-1-0.2C4.2,8.8,4.1,8.7,3.9,8.5c0.1,0.1,0.2,0.3,0.3,0.4c0.9,1,2.4,1.5,4,1.3c1-0.2,1.6-0.5,2.1-0.9c0.1-0.1,0.3-0.3,0.4-0.3C11,8.6,11.2,8.3,11.4,8C11.4,7.9,11.6,7.6,11.6,7.5L11.6,7.5z"/>
+                           </svg>
+                            <svg fill-opacity="0" fill="#B1B1B2" id="fb_fill" width="72" class="social_button_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="37px" y="23px" viewBox="0 0 24 24" enable-background="new 0 0 15 16.6" xml:space="preserve">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9,2.5c3.2,0,5.8,2.6,5.8,5.8c0,3.2-2.6,5.8-5.8,5.8c-3.2,0-5.8-2.6-5.8-5.8C2.1,5.1,4.7,2.5,7.9,2.5L7.9,2.5z M7.1,8.3c0,0,0,0.2,0,0.2l0,3.1h1.4c0-0.8,0-1.7,0-2.5c0,0,0-0.8,0-0.8c0,0,0,0,0,0c0,0,0.9,0,0.9,0l0,0l0.1-1.1l-1,0c0-0.2,0-0.3,0-0.5c0-0.2,0-0.3,0.1-0.4l0.9-0.1l0-1.1C9.3,5,9.1,5,8.9,5C8.7,5,8.5,5,8.3,5C8,5,7.7,5.1,7.5,5.3C7.2,5.8,7.1,5.4,7.1,7.1l-0.7,0l0,1.1L7.1,8.3L7.1,8.3z"/>
+                            </svg>
+                            <svg fill-opacity="0" fill="#B1B1B2" id="ytube_fill" width="72" class="social_button_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="37px" y="23px" viewBox="0 0 24 24" enable-background="new 0 0 14.7 16.2" xml:space="preserve">
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"  d="M7,9C6.9,9,6.8,9,6.7,9C6.6,9,6.6,9,6.6,9.1c0,0.4,0,0.9,0,1.3c0,0,0,0.1,0,0.1c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.1-0.1-0.1-0.1c0-0.1,0-0.1,0-0.2c0-0.5,0-0.9,0-1.4C6.4,9,6.4,9,6.3,9C6.2,9,6.1,9,6,9C5.9,9,5.9,9,5.9,9.1c0,0.6,0,1.1,0,1.7c0,0,0,0.1,0,0.1c0,0.3,0.2,0.4,0.5,0.3c0.1,0,0.1-0.1,0.2-0.1c0,0,0,0,0,0c0,0.1,0,0.1,0.1,0.1c0.1,0,0.2,0,0.3,0c0.1,0,0.1,0,0.1-0.1C7.1,10.4,7.1,9.8,7,9C7.1,9,7.1,9,7,9z"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"  d="M6,8.7c0-0.1,0-0.2,0-0.4c0-0.1,0-0.1-0.1-0.1c-0.4,0-0.9,0-1.3,0c-0.1,0-0.1,0-0.1,0.1c0,0.1,0,0.2,0,0.3c0,0.1,0,0.1,0.1,0.1c0.1,0,0.2,0,0.4,0c0,0,0,0.1,0,0.1c0,0.7,0,1.5,0,2.2c0,0.1,0,0.1,0.1,0.1c0.1,0,0.2,0,0.3,0c0.1,0,0.1,0,0.1-0.1c0-0.7,0-1.5,0-2.2c0,0,0-0.1,0-0.1C5.7,8.8,5.8,8.8,6,8.7C6,8.8,6,8.7,6,8.7z"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"  d="M7.4,6.9c0.1,0,0.2-0.1,0.2-0.2c0-0.2,0-0.4,0-0.5c0-0.2,0-0.4,0-0.6c0-0.1,0-0.2-0.1-0.2c-0.1,0-0.2,0-0.2,0.2c0,0.4,0,0.7,0,1.1c0,0,0,0.1,0,0.1C7.2,6.8,7.3,6.8,7.4,6.9z"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"  d="M8.6,9.3C8.5,9,8.2,8.9,7.9,9.1c0,0,0,0-0.1,0c0-0.3,0-0.5,0-0.7c0-0.1,0-0.1-0.1-0.1c-0.1,0-0.2,0-0.3,0c-0.1,0-0.1,0-0.1,0.1c0,0.4,0,0.9,0,1.3c0,0.5,0,0.9,0,1.4c0,0.1,0,0.1,0.1,0.1c0.1,0,0.2,0,0.3,0c0.1,0,0.1,0,0.1-0.1c0,0,0,0,0.1,0c0.2,0.1,0.4,0.1,0.5-0.1c0.1-0.1,0.1-0.2,0.1-0.4c0-0.4,0-0.8,0-1.2C8.6,9.4,8.6,9.3,8.6,9.3z M8.1,10.7c0,0.1,0,0.1-0.1,0.1c-0.1,0-0.1-0.1-0.1-0.1c0-0.2,0-0.4,0-0.6c0-0.2,0-0.4,0-0.6c0-0.1,0-0.1,0.1-0.1c0.1,0,0.1,0,0.1,0.1c0,0,0,0,0,0.1C8.1,9.9,8.1,10.3,8.1,10.7z"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"  d="M9.4,10.2c0.2,0,0.4,0,0.6,0c0.1,0,0.1,0,0.1-0.1c0-0.2,0-0.4,0-0.6C10,9.3,10,9.1,9.8,9c-0.4-0.2-1,0-1,0.5c0,0.4,0,0.7,0,1.1c0,0.2,0.1,0.3,0.2,0.4c0.2,0.2,0.4,0.2,0.6,0.1c0.2,0,0.3-0.2,0.4-0.4c0-0.1,0-0.3,0.1-0.5c0-0.1,0-0.1-0.1-0.1c-0.1,0-0.2,0-0.3,0c-0.1,0-0.1,0-0.1,0.1c0,0.1,0,0.2,0,0.3c0,0.1-0.1,0.1-0.2,0.1c-0.1,0-0.1-0.1-0.1-0.1C9.3,10.5,9.3,10.3,9.4,10.2C9.3,10.2,9.4,10.2,9.4,10.2z M9.3,9.8c0-0.1,0-0.2,0-0.3c0-0.1,0-0.1,0.1-0.1c0.1,0,0.1,0,0.1,0.1c0,0.1,0,0.2,0,0.3C9.5,9.8,9.4,9.8,9.3,9.8z"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"  d="M7.3,2.3c-3.2,0-5.8,2.6-5.8,5.8c0,3.2,2.6,5.8,5.8,5.8c3.2,0,5.8-2.6,5.8-5.8C13.1,4.9,10.5,2.3,7.3,2.3z M8.3,5.1c0.1,0,0.2,0,0.3,0c0,0,0,0,0.1,0c0,0,0,0.1,0,0.1c0,0.5,0,0.9,0,1.4c0,0,0,0.1,0,0.1c0,0,0,0.1,0.1,0.1c0,0,0.1,0,0.1,0C9,6.7,9,6.7,9,6.5c0-0.5,0-0.9,0-1.4c0,0,0-0.1,0-0.1c0.1,0,0.3,0,0.4,0c0,0.7,0,1.4,0,2.1c-0.1,0-0.2,0-0.4,0C9,7.1,9,7,9,6.9C9,7,9,7,8.9,7C8.8,7.1,8.7,7.2,8.6,7.2c-0.1,0-0.3,0-0.3-0.2c0-0.1,0-0.1,0-0.2C8.3,6.3,8.3,5.7,8.3,5.1C8.3,5.1,8.3,5.1,8.3,5.1z M7.2,5C7.4,5,7.7,5,7.8,5.2c0.1,0.1,0.1,0.2,0.1,0.3c0,0.4,0,0.8,0,1.2c0,0.3-0.2,0.5-0.5,0.5c-0.2,0-0.4,0-0.5-0.2C6.9,6.9,6.8,6.8,6.8,6.7c0-0.2,0-0.4,0-0.6h0c0-0.2,0-0.4,0-0.6C6.8,5.3,7,5.1,7.2,5z M5.8,4.3C5.8,4.3,5.8,4.4,5.8,4.3C5.9,4.7,6,5.1,6.1,5.4c0,0,0,0,0,0.1c0,0,0,0,0,0c0-0.1,0-0.1,0-0.2C6.2,5,6.3,4.7,6.4,4.4c0,0,0-0.1,0.1-0.1c0.1,0,0.2,0,0.4,0c0,0,0,0.1,0,0.1c-0.2,0.5-0.3,1-0.5,1.5c0,0,0,0.1,0,0.2c0,0.3,0,0.7,0,1c0,0,0,0.1,0,0.1c-0.1,0-0.3,0-0.4,0c0,0,0-0.1,0-0.1c0-0.3,0-0.6,0-1c0-0.1,0-0.1,0-0.2c-0.2-0.5-0.3-1-0.5-1.5c0,0,0,0,0-0.1C5.5,4.3,5.7,4.3,5.8,4.3z M10.5,10.5c0,0.2,0,0.5-0.1,0.7c-0.1,0.4-0.4,0.7-0.8,0.7c-1.2,0-2.5,0.1-3.7,0c-0.3,0-0.6,0-0.9,0c-0.4,0-0.8-0.4-0.8-0.8c0-0.6-0.1-1.2,0-1.8c0-0.3,0-0.6,0.1-0.9C4.2,8,4.6,7.7,5,7.6c0.6,0,1.2,0,1.8,0c0.2,0,0.4,0,0.5,0c0,0,0,0,0,0c0.7,0,1.5,0,2.2,0c0.4,0,0.7,0.2,0.9,0.5c0.1,0.2,0.1,0.4,0.1,0.5C10.5,9.3,10.6,9.9,10.5,10.5z"/>
+                                        </g>
+                            </svg>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </main>
+    </div><!-- .wrapper -->
+
+    <footer class="footer_wrapper parallax-window" data-parallax="scroll" data-image-src="img/bg.jpg">
+        <div class="info_company clearFix">
+            <div class="center_align clearFix">
+                <div class="information_wrapper left-float">
+                    <div class="chapter_block">
+                        <span class="iconField icon-pointer"></span><span class="description">АДРЕС</span>
+                        <span class="info">ПР. ШЕВЧЕНКА 4, Г.ОДЕСА</span>
+                    </div>
+                    <div class="chapter_block">
+                        <span class="iconField icon-phone"></span><span class="description">ТЕЛЕФОН</span>
+                        <span class="info">+3 8 (077) 777 77 88</span>
+                    </div>
+                    <div class="chapter_block">
+                        <span class="iconField icon-mail"></span><span class="description">E-MAIL</span>
+                        <span class="info email">MAIL@OFFICE.COM.UA</span>
+                    </div>
+                </div>
+                <div class="find_wrapper left-float">
+                    <span class="description">ПОИСК</span>
+                    <form action="#" id="f-search">
+                        <input type="text" />
+                        <input type="submit" value="" />
+                    </form>
+                </div>
+                <div class="menu_wrapper left-float clearFix">
+                    <ul>
+                        <li><a href="#">КТО МЫ</a></li>
+                        <li><a href="#">НАШИ ПРОЕКТЫ</a></li>
+                        <li><a href="#">НОВОСТИ</a></li>
+                        <li><a href="#">ОТЧЕТЫ</a></li>
+                        <li><a href="#">ГАЛЕРЕЯ</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="maps_company clearFix">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1374.2594783024826!2d30.749394752597812!3d46.45822777192601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x79d90fbe2de01add!2z0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLQvdCw0Y8g0LPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3QsNGPINCw0LTQvNC40L3QuNGB0YLRgNCw0YbQuNGP!5e0!3m2!1sru!2sua!4v1443031188968" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </footer>
+
+    <script src="js/module_navigations.js"></script>
+    <script src="js/module_header.js"></script>
+    <script src="js/module_projectLine.js"></script>
+    <script src="js/module_subcribes.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
